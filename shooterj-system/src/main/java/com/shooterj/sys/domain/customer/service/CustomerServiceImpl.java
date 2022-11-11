@@ -21,8 +21,6 @@ public class CustomerServiceImpl extends ServiceImpl<CustomerMapper, Customer> i
 
     /**
      * 创建实体
-     * 更新实体
-     * 持久化实体
      * @param dto
      * @return
      */
@@ -31,6 +29,7 @@ public class CustomerServiceImpl extends ServiceImpl<CustomerMapper, Customer> i
         Customer customer = new Customer();
         customer.setGrade(dto.getGrade());
         customer.setUsername(dto.getUsername());
+
         EntityOperations
                 .doCreate(getBaseMapper())
                 .create(() -> customer)
@@ -39,6 +38,10 @@ public class CustomerServiceImpl extends ServiceImpl<CustomerMapper, Customer> i
         return null;
     }
 
+    /**
+     * 更新实体
+     * @param updater
+     */
     @Override
     public void updateCustomer(CustomerUpdater updater) {
         EntityOperations

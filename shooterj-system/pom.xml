@@ -21,6 +21,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.shooterj</groupId>
             <artifactId>shooterj-common</artifactId>
@@ -33,35 +34,25 @@
         </dependency>
         <dependency>
             <groupId>com.shooterj</groupId>
+            <artifactId>shooterj-extensions-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.shooterj</groupId>
             <artifactId>shooterj-jpa-starter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-       <!-- <dependency>
-            <groupId>com.querydsl</groupId>
-            <artifactId>querydsl-apt</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.querydsl</groupId>
-            <artifactId>querydsl-jpa</artifactId>
-        </dependency>-->
-        <dependency>
-            <groupId>p6spy</groupId>
-            <artifactId>p6spy</artifactId>
-            <version>3.5.2</version>
-        </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <!--<version>3.5.2</version>-->
-        </dependency>
+            &lt;!&ndash;<version>3.5.2</version>&ndash;&gt;
+        </dependency>-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <!--<version>2.1.4</version>-->
         </dependency>
-
         <dependency>
             <groupId>com.shooterj</groupId>
             <artifactId>shooterj-mybatis-starter</artifactId>
@@ -98,6 +89,8 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
 
 

@@ -12,6 +12,7 @@
     <modules>
         <module>shooterj-jpa-starter</module>
         <module>shooterj-mybatis-starter</module>
+        <module>shooterj-extensions-starter</module>
     </modules>
 
     <artifactId>shooterj-common-starters</artifactId>
@@ -22,6 +23,16 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>com.shooterj</groupId>
             <artifactId>shooterj-common</artifactId>

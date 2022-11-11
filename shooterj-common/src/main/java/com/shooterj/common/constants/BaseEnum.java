@@ -2,7 +2,6 @@ package com.shooterj.common.constants;
 
 /**
  * @author shooterj
- * @Date 2019-09-12
  */
 public interface BaseEnum<T extends Enum<T> & BaseEnum<T>> {
 
@@ -22,7 +21,6 @@ public interface BaseEnum<T extends Enum<T> & BaseEnum<T>> {
 
   /**
    * 根据code码获取枚举
-   *
    * @param cls enum class
    * @param code enum code
    * @return get enum
