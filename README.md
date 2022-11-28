@@ -11,7 +11,7 @@ For further reference, please consider the following sections:
 1. BaseJpaAggregate，AbstractAggregateRoot聚合根
 2. VAVR函数式编程
 3. Step Builder模式
-4. 
+4. pipeline模式
 5. mapstruct
 6. SpringSecurityUtils.getCurrentUsername()
 7.代码生成器
