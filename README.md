@@ -15,8 +15,3 @@ For further reference, please consider the following sections:
 5. mapstruct。
 6. SpringSecurityUtils.getCurrentUsername()。
 7.代码生成器
-com.google.auto.service.AutoService;
-com.shooterj.codegen.processor.BaseCodeGenProcessor;
-com.shooterj.codegen.spi.CodeGenProcessor;
-com.squareup.javapoet
-auto-service
