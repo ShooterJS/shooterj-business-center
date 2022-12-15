@@ -1,16 +1,13 @@
 package com.shooterj.sys;
 
-import cn.hutool.extra.spring.EnableSpringUtil;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan("com.shooterj.sys.domain.customer.mapper")
-@EnableTransactionManagement
-//@EnableJpaRepositories(basePackages = {"com.shooterj.sys.domain"})
+@ComponentScan(basePackages = {"com.shooterj.*","com.shooterj.sys.*"})
+@MapperScan(value = {"com.shooterj.sys.infrastructure.persistence.mapper","com.shooterj.sys.domain.customer_.mapper"})
 public class Application {
 
     public static void main(String[] args) {
