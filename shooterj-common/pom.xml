@@ -19,5 +19,7 @@
         <module>shooterj-common-swagger</module>
         <module>shooter-common-log</module>
         <module>shooterj-common-pipeline</module>
+        <module>shooterj-common-track</module>
+        <module>shooterj-common-bigdata</module>
     </modules>
 </project>

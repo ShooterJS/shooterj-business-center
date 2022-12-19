@@ -1,8 +1,11 @@
 # Tomcat
 server:
   port: 8888
+  address: 0.0.0.0
   servlet:
-    context-path: /shooterj-boot
+    context-path: /
+    session:
+      timeout: 30
 
 spring:
   # 环境 dev|test|prod
@@ -32,6 +35,8 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
+    pathmatch:
+      matching-strategy: ant-path-matcher
 
 
 #mybatis
