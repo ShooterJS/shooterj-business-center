@@ -4,7 +4,6 @@ package com.shooterj.common.exception;
  * 公用的自定义异常
  *
  * @author shooterj
- * @date 2022-05-21
  **/
 public class BaseException extends RuntimeException {
 

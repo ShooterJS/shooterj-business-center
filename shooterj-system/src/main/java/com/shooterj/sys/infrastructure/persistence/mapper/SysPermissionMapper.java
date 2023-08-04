@@ -12,7 +12,6 @@ import java.util.Map;
  * 权限Mapper
  *
  * @author shooterj
- * @date 2022-02-14
  **/
 @Mapper
 public interface SysPermissionMapper extends BaseMapper<SysPermissionDO> {

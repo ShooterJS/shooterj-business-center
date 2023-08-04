@@ -12,7 +12,6 @@ import java.util.Map;
  * 查询参数
  *
  * @author shooterj
- * @date 2022-02-02
  **/
 public class Query<T> {
 

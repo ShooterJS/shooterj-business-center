@@ -22,8 +22,8 @@ spring:
       enabled: true
   redis:
     open: false  # 是否开启redis缓存  true开启   false关闭
-    database: 0
-    host: localhost
+    database: 5
+    host: 172.18.1.141
     port: 6379
     password:    # 密码（默认为空）
     timeout: 6000ms  # 连接超时时长（毫秒）
@@ -39,23 +39,3 @@ spring:
       matching-strategy: ant-path-matcher
 
 
-#mybatis
-mybatis-plus:
-  mapper-locations: classpath*:com/shooterj/**/infrastructure/persistence/mapper/xml/*Mapper.xml
-  #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.shooterj.*.infrastructure.persistence.entity
-  global-config:
-    #数据库相关配置
-    db-config:
-      #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID", ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
-      id-type: AUTO
-      logic-delete-value: 1
-      logic-not-delete-value: 0
-      logic-delete-field: delFlag
-    banner: false
-  #原生配置
-  configuration:
-    map-underscore-to-camel-case: true
-    cache-enabled: false
-    call-setters-on-nulls: true
-    jdbc-type-for-null: 'null'

@@ -2,7 +2,9 @@ package service;
 
 import com.shooterj.extension.executor.Extension;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
+@Component
 @Extension(bizId = "local")
 @Slf4j
 public class StudentServiceLocalImpl implements IStudentService {

@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
  * 返回数据定义
  *
  * @author shooterj
- * @date 2022-05-21
  */
 @AllArgsConstructor
 @NoArgsConstructor

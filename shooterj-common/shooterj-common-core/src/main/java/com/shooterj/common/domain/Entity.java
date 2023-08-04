@@ -6,7 +6,6 @@ import java.io.Serializable;
  * Entity interface
  *
  * @author shooterj
- * @date 2022-02-01
  **/
 public interface Entity<T> extends Serializable {
 

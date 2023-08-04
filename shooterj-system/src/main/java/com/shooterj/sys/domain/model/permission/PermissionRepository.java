@@ -7,7 +7,6 @@ import java.util.Map;
  * 权限-Repository接口
  *
  * @author shooterj
- * @date 2022-02-14
  **/
 public interface PermissionRepository {
 

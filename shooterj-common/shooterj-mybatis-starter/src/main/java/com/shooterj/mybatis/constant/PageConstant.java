@@ -4,7 +4,6 @@ package com.shooterj.mybatis.constant;
  * 分页查询
  *
  * @author shooterj
- * @date 2022-05-21
  **/
 public interface PageConstant {
 

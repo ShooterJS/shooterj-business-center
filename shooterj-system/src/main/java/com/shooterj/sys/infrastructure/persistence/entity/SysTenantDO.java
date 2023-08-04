@@ -8,7 +8,6 @@ import lombok.Data;
  * 租户DO
  *
  * @author shooterj
- * @date 2022-02-14
  **/
 @Data
 @TableName("sys_tenant")

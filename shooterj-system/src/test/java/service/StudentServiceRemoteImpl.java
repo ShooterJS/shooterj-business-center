@@ -2,7 +2,9 @@ package service;
 
 import com.shooterj.extension.executor.Extension;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
+@Component
 @Extension(bizId = "remote")
 @Slf4j
 public class StudentServiceRemoteImpl implements IStudentService {

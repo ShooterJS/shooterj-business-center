@@ -10,7 +10,6 @@ import java.util.Map;
  * 返回数据
  *
  * @author shooterj
- * @date 2022-05-21
  */
 public class Result extends HashMap<String, Object> {
 

@@ -7,7 +7,6 @@ import java.util.List;
  * 分页
  *
  * @author shooterj
- * @date 2022-02-04
  **/
 public class Page implements Serializable {
 

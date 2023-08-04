@@ -7,7 +7,6 @@ import com.shooterj.common.domain.ValueObject;
  * 账号ID
  *
  * @author shooterj
- * @date 2022-02-08
  **/
 public class AccountId implements ValueObject<AccountId> {
 

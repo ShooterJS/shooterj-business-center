@@ -17,9 +17,11 @@
         <module>shooterj-common-redis</module>
         <module>shooterj-extensions-starter</module>
         <module>shooterj-common-swagger</module>
-        <module>shooter-common-log</module>
+        <module>shooterj-common-log</module>
         <module>shooterj-common-pipeline</module>
         <module>shooterj-common-track</module>
-        <module>shooterj-common-bigdata</module>
+        <module>shooterj-common-easyexcel</module>
+        <module>shooterj-datafilter</module>
+        <module>shooterj-common-multilevel-cache</module>
     </modules>
 </project>

@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * 自定义异常处理器
  *
  * @author shooterj
- * @date 2022-05-21
  **/
 @Slf4j
 @RestControllerAdvice

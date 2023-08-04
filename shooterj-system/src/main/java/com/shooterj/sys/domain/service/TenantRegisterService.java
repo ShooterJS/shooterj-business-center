@@ -18,7 +18,6 @@ import java.util.Map;
  * 租户注册服务
  *
  * @author shooterj
- * @date 2022-05-10
  **/
 public class TenantRegisterService {
 

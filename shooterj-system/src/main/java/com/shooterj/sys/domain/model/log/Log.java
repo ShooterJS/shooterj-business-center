@@ -9,7 +9,6 @@ import  com.shooterj.sys.domain.model.user.UserName;
  * 日志实体
  *
  * @author shooterj
- * @date 2022-02-02
  **/
 public class Log implements Entity<Log> {
 

@@ -10,7 +10,6 @@ import java.util.List;
  * 角色权限关联Mapper
  *
  * @author shooterj
- * @date 2022-02-14
  **/
 @Mapper
 public interface SysRolePermissionMapper extends BaseMapper<SysRolePermissionDO> {

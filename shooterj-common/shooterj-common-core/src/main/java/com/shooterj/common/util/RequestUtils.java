@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
  * 请求工具类
  *
  * @author shooterj
- * @date 2022-06-01
  **/
 @Slf4j
 public class RequestUtils {

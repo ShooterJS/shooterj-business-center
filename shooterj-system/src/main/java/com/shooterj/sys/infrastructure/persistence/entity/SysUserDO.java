@@ -9,7 +9,6 @@ import lombok.Data;
  * 用户DO
  *
  * @author shooterj
- * @date 2022-02-09
  **/
 @Data
 @TableName("sys_user")

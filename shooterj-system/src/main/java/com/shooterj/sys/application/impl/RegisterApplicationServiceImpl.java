@@ -23,7 +23,6 @@ import org.springframework.stereotype.Service;
  * 身份验证应用服务实现类
  *
  * @author shooterj
- * @date 2022-05-10
  **/
 @Service
 public class RegisterApplicationServiceImpl implements RegisterApplicationService {
@@ -55,6 +54,10 @@ public class RegisterApplicationServiceImpl implements RegisterApplicationServic
 
         TenantRegisterService tenantRegisterService = new TenantRegisterService(tenantRepository, roleRepository, permissionRepository,userRepository);
 
+        registerTenant(registerTenantCommand, tenantRegisterService);
+    }
+
+    private static void registerTenant(RegisterTenantCommand registerTenantCommand, TenantRegisterService tenantRegisterService) {
         tenantRegisterService.registerTenant(
                 new TenantName(registerTenantCommand.getTenantName()),
                 new TenantCode(registerTenantCommand.getTenantCode()),

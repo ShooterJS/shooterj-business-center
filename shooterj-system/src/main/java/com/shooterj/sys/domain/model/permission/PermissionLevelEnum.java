@@ -7,7 +7,6 @@ import org.apache.commons.lang3.StringUtils;
  * 权限级别
  *
  * @author shooterj
- * @date 2022-02-15
  **/
 public enum PermissionLevelEnum implements ValueObject<PermissionLevelEnum> {
 

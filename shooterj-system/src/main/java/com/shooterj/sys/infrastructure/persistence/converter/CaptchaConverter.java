@@ -8,9 +8,6 @@ import com.shooterj.sys.infrastructure.persistence.entity.SysCaptchaDO;
 
 /**
  * 验证码转换类
- *
- * @author haoxin
- * @date 2021-05-10
  **/
 public class CaptchaConverter {
 

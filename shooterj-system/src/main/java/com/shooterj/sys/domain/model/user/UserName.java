@@ -8,7 +8,6 @@ import org.apache.commons.lang3.StringUtils;
  * 用户名
  *
  * @author shooterj
- * @date 2022-02-08
  **/
 public class UserName implements ValueObject<UserName> {
 

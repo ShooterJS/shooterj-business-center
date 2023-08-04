@@ -2,7 +2,7 @@ package com.shooterj.sys.domain.model.captcha;
 
 
 import com.shooterj.common.domain.Entity;
-import com.shooterj.common.util.DateUtil;
+import com.shooterj.common.util.MyDateUtil;
 
 import java.util.Date;
 
@@ -28,7 +28,7 @@ public class Captcha implements Entity<Captcha> {
     }
 
     public static Captcha createCaptcha(Uuid uuid, CaptchaCode captchaCode) {
-        return new Captcha(uuid, captchaCode, DateUtil.addDateMinutes(new Date(), 5));
+        return new Captcha(uuid, captchaCode, MyDateUtil.addDateMinutes(new Date(), 5));
     }
 
     public boolean validate(CaptchaCode captchaCode) {

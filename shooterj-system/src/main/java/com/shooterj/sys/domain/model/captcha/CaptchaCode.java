@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
  * 验证码
  *
  * @author shooterj
- * @date 2022-05-10
  **/
 public class CaptchaCode implements ValueObject<CaptchaCode> {
 

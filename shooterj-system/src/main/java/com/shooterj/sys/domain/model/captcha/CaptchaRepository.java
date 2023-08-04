@@ -4,7 +4,6 @@ package com.shooterj.sys.domain.model.captcha;
  * 验证码Repository
  *
  * @author shooterj
- * @date 2022-05-10
  **/
 public interface CaptchaRepository {
 

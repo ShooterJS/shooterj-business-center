@@ -4,9 +4,9 @@
 
     <!-- 开发、测试环境 -->
     <springProfile name="dev">
-        <logger name="org.springframework.web" level="INFO"/>
-        <logger name="org.springboot.sample" level="INFO" />
-        <logger name="com.shooterj" level="DEBUG" />
+        <logger name="org.springframework.web" level="ERROR"/>
+        <logger name="org.springboot.sample" level="ERROR" />
+        <logger name="com.shooterj" level="ERROR" />
     </springProfile>
 
     <springProfile name="test,prod">
@@ -58,13 +58,13 @@
         </appender>
 
         <!--root是默认的logger 这里设定输出级别是DEBUG-->
-        <root level="DEBUG">
+        <root level="ERROR">
             <appender-ref ref="STDOUT"/>
         </root>
         <!--这个logger没有指定appender，它会继承root节点中定义的那些appender-->
-        <logger name="org.springframework.web" level="INFO"/>
-        <logger name="org.springboot.sample" level="INFO" />
-        <logger name="com.shooterj" level="INFO" additivity="false">
+        <logger name="org.springframework.web" level="ERROR"/>
+        <logger name="org.springboot.sample" level="ERROR" />
+        <logger name="com.shooterj" level="ERROR" additivity="false">
             <appender-ref ref="shooterj-web"/>
             <appender-ref ref="shooterj-error"/>
         </logger>

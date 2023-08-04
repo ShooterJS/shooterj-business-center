@@ -1,0 +1,85 @@
+package com.shooterj.common.util;
+
+/**
+ * Redis 键生成工具类。
+ *
+ * @author Shooterj
+ */
+public class RedisKeyUtil {
+
+    /**
+     * 获取通用的session缓存的键前缀。
+     *
+     * @return session缓存的键前缀。
+     */
+    public static String getSessionIdPrefix() {
+        return "SESSIONID:";
+    }
+
+    /**
+     * 获取指定用户Id的session缓存的键前缀。
+     *
+     * @param loginName 指定的用户登录名。
+     * @return session缓存的键前缀。
+     */
+    public static String getSessionIdPrefix(String loginName) {
+        return "SESSIONID:" + loginName + "_";
+    }
+
+    /**
+     * 获取指定用户Id和登录设备类型的session缓存的键前缀。
+     *
+     * @param loginName  指定的用户登录名。
+     * @param deviceType 设备类型。
+     * @return session缓存的键前缀。
+     */
+    public static String getSessionIdPrefix(String loginName, int deviceType) {
+        return "SESSIONID:" + loginName + "_" + deviceType + "_";
+    }
+
+    /**
+     * 计算SessionId返回存储于Redis中的键。
+     *
+     * @param sessionId 会话Id。
+     * @return 会话存储于Redis中的键值。
+     */
+    public static String makeSessionIdKey(String sessionId) {
+        return "SESSIONID:" + sessionId;
+    }
+
+    /**
+     * 计算SessionId关联的权限数据存储于Redis中的键。
+     *
+     * @param sessionId 会话Id。
+     * @return 会话关联的权限数据存储于Redis中的键值。
+     */
+    public static String makeSessionPermIdKey(String sessionId) {
+        return "PERM:" + sessionId;
+    }
+
+    /**
+     * 计算SessionId关联的数据权限数据存储于Redis中的键。
+     *
+     * @param sessionId 会话Id。
+     * @return 会话关联的数据权限数据存储于Redis中的键值。
+     */
+    public static String makeSessionDataPermIdKey(String sessionId) {
+        return "DATA_PERM:" + sessionId;
+    }
+
+    /**
+     * 计算在线表对象缓存在Redis中的键值。
+     *
+     * @param tableId 在线表主键Id。
+     * @return 会话关联的数据权限数据存储于Redis中的键值。
+     */
+    public static String makeOnlineTableKey(Long tableId) {
+        return "ONLINE_TABLE:" + tableId;
+    }
+
+    /**
+     * 私有构造函数，明确标识该常量类的作用。
+     */
+    private RedisKeyUtil() {
+    }
+}

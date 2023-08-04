@@ -6,7 +6,6 @@ import lombok.experimental.UtilityClass;
  * 多租户 tenant_id存储器
  *
  * @author shooterj
- * @date 2022-05-21
  **/
 @UtilityClass
 public class TenantContext {
