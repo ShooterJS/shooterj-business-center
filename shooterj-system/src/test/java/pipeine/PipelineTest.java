@@ -1,8 +1,5 @@
 package pipeine;
 
-import com.shooterj.common.pipeline.InstanceBuildContext;
-import com.shooterj.common.pipeline.PipelineExecutor;
-import com.shooterj.common.pipeline.PipelineRouteConfig;
 import com.shooterj.sys.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;

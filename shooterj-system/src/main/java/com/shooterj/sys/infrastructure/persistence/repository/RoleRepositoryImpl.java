@@ -26,7 +26,7 @@ public class RoleRepositoryImpl extends ServiceImpl<SysRoleMapper, SysRoleDO> im
 
     @Override
     public RoleId store(Role role) {
-        SysRoleDO sysRoleDO = RoleConverter.INSTANCE.entityToDo(role);
+        SysRoleDO sysRoleDO = RoleConverter.fromRole(role);
         this.saveOrUpdate(sysRoleDO);
         String roleId = sysRoleDO.getId();
         //先删除角色与菜单关系
